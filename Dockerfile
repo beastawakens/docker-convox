@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --update curl && \
+RUN apk add --update curl tar && \
     rm -rf /var/cache/apk/*
 
 RUN curl -Ls http://install.convox.com/linux.tgz > convox.tgz
